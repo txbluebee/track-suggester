@@ -43,7 +43,7 @@ $(document).ready(function(){
         $('.c-net').show();
       } else {
         $('.track').hide();
-        $('.no-fit').show();
+        $('.nofit').show();
       }
     } else {
       $('.track').hide();
