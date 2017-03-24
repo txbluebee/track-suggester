@@ -10,6 +10,11 @@ $(document).ready(function(){
     var langauageType = $("input:radio[name=language-type]:checked").val();
     var api = $("input:radio[name=api]:checked").val();
 
+    //variable for name
+
+    var name = $("input#name").val();
+
+    console.log(name);
     console.log(envirnment);
     console.log(platform);
     console.log(companySize);
@@ -24,24 +29,31 @@ $(document).ready(function(){
      4. C#/.NET: value => back-end, stat, big
      5. Java/Android: value => back-end, stat, mobile
     **/
-    if ( (envirnment === "front-end") ) {
-      $('.track').hide();
-      $('.design').fadeIn();
-    } else if ( (envirnment === "back-end") && ( langauageType === "dynamic") && ( api === "lessAPI") ) {
-      $('.track').hide();
-      $('.php').slideUp();
-    } else if ( (envirnment === "back-end") && ( langauageType === "dynamic") && ( api === "moreAPI") && ( companySize = "small")) {
-      $('.track').hide();
-      $('.ruby').slideDown();
-    } else if ( (envirnment === "back-end") && ( langauageType === "static") && ( platform === "mobile")) {
-      $('.track').hide();
-      $('.java').show();
-    } else if ( (envirnment === "back-end") && ( langauageType === "static") && ( companySize = "big")) {
-      $('.track').hide();
-      $('.c-net').show();
+
+    if (name) {
+      if ( (envirnment === "front-end") ) {
+        $('.track').hide();
+        $('.design').fadeIn();
+      } else if ( (envirnment === "back-end") && ( langauageType === "dynamic") && ( api === "lessAPI") ) {
+        $('.track').hide();
+        $('.php').slideUp();
+      } else if ( (envirnment === "back-end") && ( langauageType === "dynamic") && ( api === "moreAPI") && ( companySize = "small")) {
+        $('.track').hide();
+        $('.ruby').slideDown();
+      } else if ( (envirnment === "back-end") && ( langauageType === "static") && ( platform === "mobile")) {
+        $('.track').hide();
+        $('.java').show();
+      } else if ( (envirnment === "back-end") && ( langauageType === "static") && ( companySize = "big")) {
+        $('.track').hide();
+        $('.c-net').show();
+      } else {
+        $('.track').hide();
+        $('no-fit').show();
+      }
     } else {
       $('.track').hide();
-      $('no-fit').show();
+      alert("Please enter your name!");
     }
+
   });
 });
