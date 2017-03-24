@@ -12,14 +12,9 @@ $(document).ready(function(){
 
     //variable for name
 
-    var name = $("input#name").val();
+    var name = $("input#name").val().toUpperCase();
 
-    console.log(name);
-    console.log(envirnment);
-    console.log(platform);
-    console.log(companySize);
-    console.log(langauageType);
-    console.log(api);
+    $('.userName').text(name);
 
     //front-end Logic
     /**
