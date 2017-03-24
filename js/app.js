@@ -15,6 +15,15 @@ $(document).ready(function(){
     console.log(companySize);
     console.log(langauageType);
     console.log(api);
-    
+
+    //front-end Logic
+    /**
+     1. CSS/Design: value => front-end
+     2. PHP/Drupal value => back-end, dynamic, lessAPI
+     3. Ruby/Rails: value => back-end, dynamic, small, moreAPI,
+     4. C#/.NET: value => back-end, stat, big
+     5. Java/Android: value => back-end, stat, mobile
+    **/
+    if ()
   });
 });
