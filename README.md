@@ -6,7 +6,7 @@
 
 ## Description
 
-Track suggester is the survey to help poential student to decide the course we provided in Epicodus.
+Track suggester is the survey to help Epicodus poential students to decide the right track for them .
 
 ## Setup/Installation Requirements
 
