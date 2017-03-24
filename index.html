@@ -14,24 +14,24 @@
   <script src="js/app.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="text-center">Track Suggester</h1>
+  <div class="container heading">
+    <div class="jumbotron text-center bg-primary text-white">
+      <h1 class="display-3 mb-3">Track Suggester</h1>
+      <p class="lead">Not sure which track is right for you? We have survey to help you out.</p>
     </div>
   </div>
 
   <!-- Survey -->
-  <div class="container">
-    <h2>Survey</h2>
-    <p>Please complete the survey. We will find the best track for you to learn in Epicodus. </p>
+  <div class="container questions pl-4">
+    <h2 class="mb-3">Survey</h2>
+    <p class="mb-5">Please complete the survey. We will find the best track for you to learn in Epicodus. </p>
     <div class="row">
       <div class="col-md-10">
         <form id="survey">
-
           <!-- Question 1 -->
           <div class="form-group row">
             <h5 class="col-sm-10">1. Are you interested in front-end or back-end development?</h5>
-            <div class="col-sm-10">
+            <div class="col-sm-10 ">
               <div class="form-check">
                 <label class="form-check-label">
                   <input class="form-check-input" type="radio" name="envirnment" id="front-end" value="front-end" checked>
@@ -106,7 +106,7 @@
 
           <!-- Question 5 -->
           <div class="form-group row">
-            <h5 class="col-sm-10">5. Do you like to build interactive web applications? or Would you prefer working with content-heavy websites with relatively little user interaction? </h5>
+            <h5 class="col-sm-10">5. Do you like to build interactive web applications? Or would you prefer working with content-heavy websites with relatively little user interaction? </h5>
             <div class="col-sm-10">
               <div class="form-check">
                 <label class="form-check-label">
@@ -122,11 +122,16 @@
               </div>
             </div>
           </div>
+
+
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
   </div>
+
+
+  <!-- Result -->
   <div class="container ">
     <div class="row">
 
