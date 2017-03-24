@@ -39,6 +39,9 @@ $(document).ready(function(){
     } else if ( (envirnment === "back-end") && ( langauageType === "static") && ( companySize = "big")) {
       $('.track').hide();
       $('.c-net').show();
+    } else {
+      $('.track').hide();
+      $('no-fit').show();
     }
   });
 });
