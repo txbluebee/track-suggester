@@ -26,6 +26,7 @@ $(document).ready(function(){
     **/
 
     if (name) {
+      $("body").css("background-color", "#fcdfc4");
       if ( (envirnment === "front-end") ) {
         $('.track').hide();
         $('.design').show();
@@ -49,6 +50,7 @@ $(document).ready(function(){
       $('.track').hide();
       alert("Please enter your name!");
     }
+
 
   });
 });
