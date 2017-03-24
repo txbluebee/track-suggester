@@ -1,6 +1,6 @@
-# Brian Fan's Portfolio
+# Epicodus Track Suggester
 
-#### JavaScript and jQuery Independent Project, 03/17/2017
+#### JavaScript and jQuery Independent Project, 03/24/2017
 
 #### By Brian Fan
 
