@@ -28,13 +28,13 @@ $(document).ready(function(){
     if (name) {
       if ( (envirnment === "front-end") ) {
         $('.track').hide();
-        $('.design').fadeIn();
+        $('.design').show();
       } else if ( (envirnment === "back-end") && ( langauageType === "dynamic") && ( api === "lessAPI") ) {
         $('.track').hide();
-        $('.php').slideUp();
+        $('.php').show();
       } else if ( (envirnment === "back-end") && ( langauageType === "dynamic") && ( api === "moreAPI") && ( companySize = "small")) {
         $('.track').hide();
-        $('.ruby').slideDown();
+        $('.ruby').show();
       } else if ( (envirnment === "back-end") && ( langauageType === "static") && ( platform === "mobile")) {
         $('.track').hide();
         $('.java').show();
@@ -43,7 +43,7 @@ $(document).ready(function(){
         $('.c-net').show();
       } else {
         $('.track').hide();
-        $('no-fit').show();
+        $('.no-fit').show();
       }
     } else {
       $('.track').hide();
