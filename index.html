@@ -25,7 +25,106 @@
     <h2>Survey</h2>
     <p>Please complete the survey. We will find the best track for you to learn in Epicodus. </p>
     <div class="row">
-      <div class="col-md-10 col-offset-md-2"></div>
+      <div class="col-md-10">
+        <form id="survey">
+
+          <!-- Question 1 -->
+          <div class="form-group row">
+            <h5 class="col-sm-10">1. Are you interested in front-end or back-end development?</h5>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="envirnment" id="front-end" value="front-end" checked>
+                  Front-End
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="envirnment" id="back-end" value="back-end">
+                  Back-end
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="form-group row">
+            <h5 class="col-sm-10">2. Would you rather be web or mobile developer?</h5>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="platform" id="web" value="web" checked>
+                  Web
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="platform" id="mobile" value="mobile">
+                  Mobile
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="form-group row">
+            <h5 class="col-sm-10">3. Do you prefer to work for big company like Microsoft or small start-up company? </h5>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="company-size" id="big" value="big" checked>
+                  Big Company (ex: Microsoft)
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="company-size" id="small" value="small">
+                  Small Company (ex: Start-up, enterprise type)
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="form-group row">
+            <h5 class="col-sm-10">4. Do you like to learn more dynamic languages or statically typed of languages? </h5>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="language-type" id="dynamic" value="dynamic" checked>
+                  Dynamic Languages
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="language-type" id="static" value="static">
+                  Statically Typed Languages
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="form-group row">
+            <h5 class="col-sm-10">5. Do you like to build interactive web applications? or Would you prefer working with content-heavy websites with relatively little user interaction? </h5>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="api" id="more-api" value="moreAPI" checked>
+                  build more interactive web applications
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="api" id="less-api" value="lessAPI">
+                  build less interactive web applications
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 
