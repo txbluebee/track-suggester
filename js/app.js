@@ -24,6 +24,21 @@ $(document).ready(function(){
      4. C#/.NET: value => back-end, stat, big
      5. Java/Android: value => back-end, stat, mobile
     **/
-    if ()
+    if ( (envirnment === "front-end") ) {
+      $('.track').hide();
+      $('.design').show();
+    } else if ( (envirnment === "back-end") && ( langauageType === "dynamic") && ( api === "lessAPI") ) {
+      $('.track').hide();
+      $('.php').show();
+    } else if ( (envirnment === "back-end") && ( langauageType === "dynamic") && ( api === "moreAPI") && ( companySize = "small")) {
+      $('.track').hide();
+      $('.ruby').show();
+    } else if ( (envirnment === "back-end") && ( langauageType === "static") && ( platform === "mobile")) {
+      $('.track').hide();
+      $('.java').show();
+    } else if ( (envirnment === "back-end") && ( langauageType === "static") && ( companySize = "big")) {
+      $('.track').hide();
+      $('.c-net').show();
+    }
   });
 });
