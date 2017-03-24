@@ -26,13 +26,13 @@ $(document).ready(function(){
     **/
     if ( (envirnment === "front-end") ) {
       $('.track').hide();
-      $('.design').show();
+      $('.design').fadeIn();
     } else if ( (envirnment === "back-end") && ( langauageType === "dynamic") && ( api === "lessAPI") ) {
       $('.track').hide();
-      $('.php').show();
+      $('.php').slideUp();
     } else if ( (envirnment === "back-end") && ( langauageType === "dynamic") && ( api === "moreAPI") && ( companySize = "small")) {
       $('.track').hide();
-      $('.ruby').show();
+      $('.ruby').slideDown();
     } else if ( (envirnment === "back-end") && ( langauageType === "static") && ( platform === "mobile")) {
       $('.track').hide();
       $('.java').show();
